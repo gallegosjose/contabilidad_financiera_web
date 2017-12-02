@@ -1,0 +1,1026 @@
+<script>
+    $(document).ready(function() {
+        $('input#idUsuario, textarea#textarea1').characterCounter();
+    });
+
+    $(document).ready(function() {
+        $('select').material_select();
+    });
+
+    $(document).ready(function() {
+        $('select').material_select();
+    });
+    $(document).ready(function(){
+        $('ul.tabs').tabs();
+    });
+    $(document).ready(function(){
+
+        $('.ir-arriba').click(function(){
+            $('body, html').animate({
+                scrollTop: '0px'
+            }, 300);
+        });
+
+        $(window).scroll(function(){
+            if( $(this).scrollTop() > 0 ){
+                $('.ir-arriba').slideDown(300);
+            } else {
+                $('.ir-arriba').slideUp(300);
+            }
+        });
+
+    });
+</script>
+<script>
+
+    // SIDEBAR
+    $(document).ready(function(){
+
+        $('.button-collapse').sideNav({
+                menuWidth: 420, // Default is 300
+                edge: 'left', // Choose the horizontal origin
+
+                closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                draggable: true // Choose whether you can drag to open on touch screens
+            }
+        );
+        // START OPEN
+        $('.button-collapse').sideNav('show');
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $('.materialboxed').materialbox();
+    });
+</script>
+
+<div class="container">
+    <span>
+        <i class=" waves-effect ir-arriba material-icons prefix">arrow_upward</i>
+    </span>
+    <div class="nav-wrapper">
+        <a data-activates="slide-out"  class="waves-effect waves-light btn button-collapse  red darken-4"><i class="material-icons left">menu</i>MENU</a>
+    </div>
+    <div ng-show="inicio == 1" >
+        <div class="container" >
+            <div class="row"></div>
+            <div class="row"></div>
+        <div class="col s4">
+            <div class="center-align">
+
+            <h4 class="texto_inicio"><b><font face="Cambria">ANÁLISIS FINANCIERO DE LA EMPRESA UNIÓN DE CERVECERÍAS PERUANAS BACKUS JOHNSTON</font>  </b></h4><div class="row"></div><div class="row"></div><div class="row"></div>
+                <img   src="app/img/logo_backus_2.jpg" alt="HTML5 Icon"  style="width:600px;height:300px;">
+            </div>
+        </div>
+        </div>
+    </div>
+    <div ng-show="integrantes==1">
+        <div class="card">
+            <div class="card-content black-text">
+                <div class="row">
+                    <div class="col s2"></div>
+                    <div class="col s8">
+                        <div class="center-align">
+                            <div class="texto_inicio">
+                            <h4><b><font face="Cambria">UNIVERSIDAD NACIONAL DE INGENIERÍA</font>  </b></h4>
+                            <h5><b><font face="Cambria">Facultad de Ingeniería Industrial y de Sistemas</font>  </b></h5><div class="row"></div>
+                            </div><div class="row"></div><div class="row"></div>
+                                <img   src="app/img/e_uni.jpg" alt="HTML5 Icon"  style="width:280px;height:300px;">
+                        </div>
+                        <table class="highlight">
+                            <thead>
+                            <tr><th><font face="Cambria">CURSO :</font></th></tr>
+                            </thead>
+                        </table>
+                        <table  class="highlight ">
+                            <tbody>
+                            <tr>
+                                <th width="80%"><font face="Cambria">Contabilidad Financiera</font></th>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="highlight">
+                            <thead>
+                            <tr><th><font face="Cambria">PROFESOR :</font></th></tr>
+                            </thead>
+                        </table>
+                        <table  class="highlight ">
+                            <tbody>
+                            <tr>
+                                <th width="80%"><font face="Cambria">Ing.Valle Santos, John Clerk</font></th>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="highlight">
+                            <thead>
+                            <tr><th><font face="Cambria">ALUMNOS :</font></th></tr>
+                            </thead>
+                        </table>
+                        <table  class="highlight ">
+                            <tbody>
+                            <tr>
+                                <th width="80%"><font face="Cambria">Alcarraz Vela, Miguel Angel</font></th>
+                                <th>20152535I</th>
+                            </tr>
+                            <tr>
+                                <th width="80%"><font face="Cambria">Blas Bernardo, Janet Kenia</font></th>
+                                <th>20152509H</th>
+                            </tr>
+                            <tr>
+                                <th width="80%"><font face="Cambria">Gallegos Aliaga, José Esteban</font></th>
+                                <th>20151307B</th>
+                            </tr>
+                            <tr>
+                                <th width="80%"><font face="Cambria">Ortega Ortiz, Jesús Rosdem</font></th>
+                                <th>20154031H</th>
+                            </tr>
+                            <tr>
+                                <th width="80%"><font face="Cambria">Starling Rodriguez, Arnold José
+                                </font></th>
+                                <th>20151219F</th>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="row"></div>
+                        <div class="row"></div>
+                        <div class="row"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-show="introduccion==1">
+        <div class="card">
+            <div class="card-content black-text">
+                <div class="row">
+                    <div class=" row center-align">
+                        <p1><b><font face="Cambria">INTRODUCCIÓN</font></b></p1>
+                    </div>
+
+
+                    <div class="row"></div>
+                    <p2> La industria cervecera en el país se inicia en el siglo XIX con la fundación de la cervecería Pilsen, con lo que se
+                        introduce en el mercado peruano una nueva bebida alcohólica que rápidamente logra convertirse en una de las principales opciones para los consumidores
+                        de este tipo de bebidas. El mercado cervecero peruano actual representa una venta total de 13,7 millones de hectolitros, que agrupa a la cerveza
+                        industrial y a la cerveza artesanal. En la primera de ellas, es Unión de Cervecerías Peruanas Backus y Johnston S.A.A. la que mantiene el liderazgo.
+                        Esta empresa cuenta con 136 años de creación y mantiene el liderazgo en el segmento de cerveza con más de 95,0% de participación de mercado, apoyado
+                        por su presencia en más de 180.000 puntos de venta, en los que adicionalmente la empresa ofrece su segmento de bebidas no alcohólicas. Es por
+                        el liderazgo en su sector, su potencial de crecimiento, el respaldo de una empresa líder a nivel mundial y su sólida posición financiera que se
+                        decidió valorizar a Unión de Cervecerías Peruanas Backus y Johnston S.A.A. Es destacable que Backus, además del liderazgo del mercado, mantenga,
+                        en el actual contexto de desaceleración económica por el que atraviesa el país, un crecimiento sostenido de sus ventas, lo cual ha logrado gracias
+                        a sus estrategias comerciales e innovación con el lanzamiento de nuevas marcas y productos, que buscan responder de manera oportuna a los cambios en
+                        los gustos de los consumidores y brindar productos acordes a las necesidades de cada segmento de mercado. Lo anterior ha permitido posicionar a Backus
+                        en la mente de los consumidores, con lo cual competidores importantes a nivel mundial, como Ambev de Brasil, no han logrado restarle mayores puntos en
+                        participación de mercado. Las preferencias del consumidor y la competencia obligan a Backus a recurrir a innovaciones y lanzamientos de nuevas marcas
+                        en su segmento de cerveza con el objetivo de mantener e incrementar su volumen de ventas. Sin embargo, existen factores externos que lo afectan como el
+                        crecimiento o decrecimiento de la economía, el comportamiento del clima o el consumo de la población. Unión de Cervecerías Peruanas Backus y Johnston
+                        S.A.A. cuenta con múltiples reconocimientos: el de PwC y Revista G de Gestión, por ser una de las diez empresas más 2 admiradas del Perú por tercer año
+                        consecutivo; el premio por la mayor inversión, destinado a proyectos de infraestructura para el país por parte de ProInversión; el de Laborum y Arellano,
+                        por ser uno de los mejores lugares para trabajar; el premio Perú 2021 a la responsabilidad social y desarrollo sostenible de las empresas, en las
+                        categorías Clientes y Favorito del Público para Backus y Club Sporting Cristal, respectivamente. Asimismo, han ganado diversos premios internacionales
+                        por el proyecto de bancarización para la inclusión financiera de sus clientes, como el Golden Bridge Award, The International Business Award y The
+                        Financial World Innovation Award. La Bolsa de Valores de Lima la ha reconocido como una de las empresas que poseen buenas prácticas de gobierno
+                        corporativo, a pesar de no estar considerada en el Índice de Buen Gobierno Corporativo, debido a que sus acciones no son muy líquidas. Si bien la baja
+                        liquidez de sus acciones puede no ser atractiva para los inversionistas, para efectos del presente trabajo, significa una oportunidad para aprender
+                        en la práctica la mejor manera de valorizar empresas cuyos títulos tienen dicha particularidad, lo que otorga a este estudio la posibilidad de conocer
+                        a detalle a una empresa modelo con características únicas en el país y a su vez se convierte en un reto, debido a que no se cuentan con valoraciones en
+                        el mercado que puedan servirnos de guía en la ejecución de la presenta valoración. Este trabajo se inicia con la descripción del negocio de Unión de
+                        Cervecerías Peruanas Backus y Johnston S.A.A. En él se revisa y analiza su análisis de cuentas y ratios financieros, luego en base a la información
+                        obtenida, ejecutar la valoración y obtener el valor fundamental de la empresa, realizar análisis de escenarios que permitan tener un grado de confianza
+                        sobre los resultados obtenidos a fin de, finalmente, llegar a las conclusiones.</p2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-show="historia==1">
+        <div class="card">
+            <div class="card-content black-text">
+                <div class="row">
+                    <div class=" row center-align">
+                        <p1><b><font face="Cambria">HISTORIA POR PERIODOS</font></b></p1>
+                    </div>
+                    <p2><font face="Cambria">El origen de Backus se remonta a 1879, año en el que los señores Jacobo Backus y Howard Johnston,
+                        de nacionalidad estadounidense, establecen una cervecería en el tradicional distrito del Rímac.
+                        Posteriormente, fue adquirida por Backus & Johnston Brewery Company Ltd.,
+                        una empresa fundada en Londres en 1889.</font>
+                    </p2>
+                    <div class="row"></div>
+                    <p2><font face="Cambria">
+                        <b>1954:</b> Backus & Johnston Brewery Company Ltd. es adquirida por empresarios peruanos. Backus &
+                        Johnston Brewery Company Ltd. fue transformada en una empresa nacional en 1954, cuando sus acciones
+                        fueron adquiridas por inversionistas peruanos, liderados por Don Ricardo Bentín Mujica, quienes
+                        la convierten en la Cervecería Backus & Johnston S.A., estableciendo un ejemplo de nacionalización
+                        por iniciativa privada y accionariado difundido.
+                    </font></p2>
+                    <div class="row"></div>
+                    <p2><font face="Cambria">
+                        <b>1955-1973:</b> Ampliación del mercado y descentralización
+                        El mercado se desarrolla significativamente, se moderniza la Planta del Rímac y se adopta como Sistema
+                        de Comercialización a las Centrales de Distribución, llegando a tener el 41% de la participación del
+                        mercado cervecero.
+                        Se descentraliza la fabricación de cerveza y se promueve la constitución de Cervecería San Juan S. A.
+                        y Cervecería del Norte S.A., para atender los mercados de la Amazonía y el norte del país.
+                    </font></p2>
+                    <div class="row"></div>
+                    <p2><font face="Cambria"><b>1981-1993:</b>	 Inversión	en Planta de Ate
+                        En 1981 se instala la primera línea de embotellamiento en la planta de Ate, queda completamente
+                        equipada en el año 1993 con la instalación de la línea de cocimiento, siendo inaugurada en ese año.
+                        Esta importante inversión permitió contar con la capacidad instalada necesaria para la expansión del
+                        mercado cervecero, convirtiéndose en una de las más modernas de América.
+                    </font></p2>
+                    <div class="row"></div>
+                    <p2><font face="Cambria"><b>1994:</b> Se adquiere Compañía Nacional de Cerveza S.A.
+                        Backus adquiere el 62% de las acciones comunes de la Compañía Nacional de Cerveza S.A.(CNC), su principal
+                        competidor por más de un siglo. Esto le permite adquirir participaciones en Sociedad Cervecera de Trujillo
+                        S.A., de Agua Mineral Litinada San Mateo S.A., entre otras compañías de propiedad de CNC.
+                    </font></p2>
+                    <div class="row"></div>
+                    <p2><font face="Cambria"><b>1996:</b>	Fusión	de	empresas.
+                        Con una visión de futuro y buscando maximizar las eficiencias a través de las sinergias
+                        en el negocio cervecero, en 1996 los accionistas de Cervecería Backus y Johnston S.A., Compañía
+                        Nacional de Cerveza S.A., Cervecería del Norte S.A. y Sociedad Cervecera de Trujillo S.A. deciden
+                        fusionar las empresas creando Unión de Cervecerías Peruanas Backus y Johnston S.A.A., la empresa
+                        cervecera más importante  del Perú.
+                    </font></p2>
+                    <div class="row"></div>
+                    <p2><font face="Cambria"><b>2000:</b> Se adquiere Compañía Cervecera del Sur del Perú S.A.
+                        En el año 2000, Compañía Cervecera del Sur del Perú S.A. (Cervesur) con sus plantas de Arequipa
+                        y Cusco pasa a formar parte del Grupo Backus, con el objetivo de consolidar una compañía capaz
+                        de competir efectivamente en un entorno globalizado.
+                    </font></p2>
+                    <div class="row"></div>
+                    <p2><font face="Cambria"><b>2005:</b> SABMiller adquiere el Grupo Empresarial Bavaria
+                        Con la fusión del Grupo Empresarial Bavaria y SABMiller plc, empresa de origen sudafricano,
+                        con sede en Londres; pasa a formar parte del segundo grupo cervecero a nivel mundial, con presencia
+                        en más de 60 países y con un portafolio de más de 170 marcas.
+                    </font></p2>
+                    <div class="row"></div>
+                    <p2><font face="Cambria"><b>2014:</b> Backus cede a Coca Cola sus marcas de bebidas no alcohólicas, Esta transferencia se realizó cuando
+                        SabMiller, la empresa que administra actualmente a Backus, llegó a un acuerdo Global con The Coca Cola Company,
+                        para darles las facilidades de que esta compañía pueda apropiarse de las marcas de sus bebidas no alcohólicas,
+                        tales como San Mateo, Guaraná Backus, Cristalina, etc, con la finalidad de expandirse por el continente africano.</font></p2>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                        <div class="center-align">
+                            <p1><b>HISTORIA - LÍNEA DE TIEMPO</b></p1>
+                        </div>
+                    <div class="row"></div><div class="row"></div>
+                        <div class="row">
+                        <div class="col s2"></div>
+                        <div class="col s8">
+                            <div class="video-container">
+                                <iframe width="600" height="480" src="https://www.youtube.com/embed/qsygcjvSbQQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col s2"></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-show="actualidad==1">
+        <div class="card">
+            <div class="card-content black-text">
+                <div class="row">
+                    <div class=" row center-align">
+                        <p1><b><font face="Cambria">EN LA ACTUALIDAD</font></b></p1>
+                    </div>
+                    <p2><font face="Cambria">Actualmente Backus es la empresa líder de la industria cervecera en el Perú.
+                        Tenemos 5 plantas de producción de cerveza descentralizadas ubicadas en Lima
+                        (Ate), Arequipa, Cusco, Motupe y Pucallpa; además de una Maltería y una planta
+                        de agua mineral. Contamos con un portafolio de marcas nacionales e internacionales
+                        muy bien segmentadas, que buscan satisfacer a los consumidores en los más de
+                        180,000 puntos de venta a lo largo de todo el país.</font></p2>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="center-align">
+                        <img  src="app/img/backus_4.jpg" alt="HTML5 Icon"  style="width:600px;height:300px;">
+                    </div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class=" center-align">
+                        <p1><b><font face="Cambria">ELABORACIÓN DE LA CERVEZA EN UNA PLANTA DE BACKUS</font></b></p1>
+                    </div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row">
+                    <div class="col s2"></div>
+                    <div class="col s8">
+                    <div class="video-container">
+                        <iframe width="600" height="480" src="https://www.youtube.com/embed/tBqGtyTg_Fo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    </div>
+                        <div class="col s2"></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-show="e_s_f_activos==1">
+    <div class="card">
+        <div class="card-content black-text">
+            <div class="row">
+                <div class="row"></div>
+                <div class=" row center-align">
+                    <p1><b><font face="Cambria">ESTADO DE SITUACIÓN FINANCIERA - ANÁLISIS VERTICAL</font></b></p1>
+                </div>
+                <p1><b><font face="Cambria">(ACTIVOS)</font></b></p1>
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="center-align">
+                    <img  src="app/img/e_s_f_activos_AV.png" alt="HTML5 Icon"  style="width:1300px;height:470px;">
+                </div>
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="row">
+                    <p1><b><font face="Cambria">(PASIVOS)</font></b></p1>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="center-align">
+                        <img    src="app/img/e_s_f_pasivos_AV.png" alt="HTML5 Icon"  style="width:1300px;height:470px;">
+                    </div>
+                </div>
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="row">
+                    <p1><b><font face="Cambria">(PATRIMONIO)</font></b></p1>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="center-align">
+                        <img    src="app/img/e_s_f_patrimonio_AV.png" alt="HTML5 Icon"  style="width:1300px;height:240px;">
+                    </div>
+                </div>
+                <div class="row"></div>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>Conclusiones:</b> </font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> El activo corriente más importante es el efectivo.</font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> El activo no corriente más importante es la propiedad privada.</font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> Es una empresa deudora ya que su pasivo más importante son las cuentas por pagar.</font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> La inversión es el que en mayor medida aumenta nuestro patrimonio.</font></p2>
+                <div class="row"></div>
+                <div class="row"></div>
+            </div>
+
+            <div class="row">
+                <div class=" row center-align">
+                    <p1><b><font face="Cambria">ESTADO DE SITUACIÓN FINANCIERA - ANÁLISIS HORIZONTAL</font></b></p1>
+                </div>
+                <p1><b><font face="Cambria">(ACTIVOS)</font></b></p1>
+                <div class="row"></div>
+                <h5></h5>
+                <div class="row"></div>
+                <div class="center-align">
+                    <img   src="app/img/e_s_f_activos_AH.PNG" alt="HTML5 Icon"  style="width:1300px;height:600px;">
+                </div>
+            </div>
+
+
+            <div class="row"></div><div class="row"></div>
+            <div class="row">
+                <p1><b><font face="Cambria">(PASIVOS)</font></b></p1>
+                <div class="row"></div>
+                <h5></h5>
+                <div class="row"></div>
+                <div class="center-align">
+                    <img   src="app/img/e_s_f_pasivos_AH.PNG" alt="HTML5 Icon"  style="width:1300px;height:300px;">
+                </div>
+            </div>
+            <div class="row"></div><div class="row"></div>
+            <div class="row">
+                <p1><b><font face="Cambria">(PATRIMONIO)</font></b></p1>
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="center-align">
+                    <img  src="app/img/e_s_f_patrimonio_AH.PNG" alt="HTML5 Icon"  style="width:1300px;height:180px;">
+                </div>
+                <div class="row"></div>
+                <div class="row"></div>
+                <p2><b>Conclusiones: </b></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>El activo corriente que más varió en el periodo:</b></font></p2>
+
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> 2013-2014: Otros Activos no financieros (179.79%)</font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> 2014-2015: Efectivo y Equivalentes al Efectivo (150%)</font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> 2015-2016: Efectivo y Equivalentes al Efectivo (61%)</font></p2>
+                <div class="row"></div>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b> El activo no corriente que más varió en el periodo: </b></font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> 2013-2014: Activos Biológicos (51.49%)</font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> 2014-2015: Activos Biológicos (12%)</font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> 2015-2016: Activos intangibles distintos de la plusvalía (-31%)</font></p2>
+                <div class="row"></div>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b> El pasivo corriente que más varió en el periodo: </b></font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> 2013-2014: Provisión por Beneficios a los Empleados (82.12%)</font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> 2014-2015: Pasivos por Impuestos a las Ganancias (58%)</font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> 2015-2016: Otras provisiones (253%)</font></p2>
+                <div class="row"></div>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b> El pasivo no corriente que más varió en el periodo:</b></font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> 2013-2014: Otros Pasivos Financieros (14.65%)</font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> 2014-2015: Provisión por Beneficios a los Empleados (9%)</font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b>2015-2016: Otros Pasivos Financieros (-69%)</font></p2>
+                <div class="row"></div>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b> El patrimonio que más varió en el periodo:</b></font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> 2013-2014: Otras Reservas de Patrimonio (111.86%)</font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> 2014-2015: Resultados Acumulados (36%)</font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> 2015-2016 Otras Reservas de Patrimonios (-126%)</font></p2>
+                <div class="row"></div>
+                <div class="row"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-show="e_s_f_pasivos==1">
+    <div class="card">
+        <div class="card-content black-text">
+            <div class="row">
+                <div class=" row center-align">
+                    <p1><b><font face="Cambria">ESTADO DE RESULTADOS - ANÁLISIS VERTICAL</font></b></p1>
+                </div>
+                <h5></h5>
+                <div class="row"></div>
+                <div class="center-align">
+                    <img   src="app/img/t_e_r_vertical.PNG" alt="HTML5 Icon"  style="width:1000px;height:400px;">
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <p2><font face="Cambria"><b>*</b> Los ingresos más importantes son los ingresos de
+                actividades ordinarias.</font></p2>
+            <div class="row"></div>
+            <p2><font face="Cambria"><b>*</b> La mayor cantidad de gastos se observa en gastos de venta
+                y distribución.</font></p2>
+            <div class="row"></div>
+            <p2><font face="Cambria"><b>*</b> Existen más gastos financieros que ingresos en general.</font></p2>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row">
+                <div class=" row center-align">
+                    <p1><b><font face="Cambria">ESTADO DE RESULTADOS - ANÁLISIS HORIZONTAL</font></b></p1>
+                </div>
+                <h5></h5>
+                <div class="row"></div>
+                <div class="center-align">
+                    <img   src="app/img/t_e_r_horizontal.PNG" alt="HTML5 Icon"  style="width:1300px;height:500px;">
+                </div>
+                <div class="row"></div>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> Como la variación en ingresos es positiva decimos que la
+                    empresa genera cada vez mayores ventas.</font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> La ganancia neta desde el 2013 a crecido, aunque tuvo un decrecimiento el último año.</font></p2>
+                <div class="row"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-show="e_s_f_patrimonio==1">
+    <div class="card">
+        <div class="card-content black-text">
+
+        </div>
+    </div>
+</div>
+<div ng-show="ratiosEndeudamiento==1">
+    <div class="container">
+    <div class="card">
+        <div class="card-content black-text">
+            <div class="row">
+                <div class=" row center-align">
+                    <p1><b><font face="Cambria">RATIOS DE ENDEUDAMIENTO O SOLVENCIA</font></b></p1>
+                </div>
+                <p2><b><font face="Cambria">ANÁLISIS DE ENDEUDAMIENTO</font></b></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria">De manera muy resumida, estos ratios muestran la cantidad de recursos que son obtenidos
+                    de terceros para la empresa. Es muy confiable que una empresa muestre solvencia frente a sus obligaciones
+                    de pago en el corto y mediano plazo esto expresa el respaldo que posee la empresa frente a sus deudas totales.
+                    Estos indicadores, sobre todo su evolución, nos serán de gran ayuda para a la hora de analizar el riesgo
+                    que asume nuestra empresa o negocio al realizar ventas al crédito, permitiéndonos establecer límites de
+                    crédito adecuados a cada cliente. Lo que obviamente nos ayudará a contener el riesgo de impago.
+                </font></p2>
+                <div class="row"></div>
+                <p2><b><font face="Cambria">RATIOS DE ENDEUDAMIENTO</font></b></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria">Este ratio mide el grado de endeudamiento con respecto al patrimonio.
+                    Mide el impacto del pasivo total con respecto al patrimonio.
+                </font></p2>
+                <div class="row"></div>
+                <div class="center-align">
+                    <img  src="app/img/r_endeudamiento_0.PNG" alt="HTML5 Icon"  style="width:400px;height:80px;">
+                </div>
+                <div class="row"></div>
+                <div class="center-align">
+                    <img  src="app/img/r_endeudamiento_1.PNG" alt="HTML5 Icon"  style="width:600px;height:120px;">
+                </div>
+                <div class="row"></div>
+                <p2><b><font face="Cambria">Interpretación</font></b></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> Para el año 2013 el indicador resultó ser 1.04 que significa que por cada s/.1.00 de
+                    patrimonio existe s/.1.04 de pasivos o deudas a corto plazo, la empresa funciona gracias al financiamiento.</font></p2>
+                <div></div><p2><font face="Cambria"><b>*</b> Para el año 2014 el indicador resultó ser 1.04 que significa que por cada
+                s/.1.00 de patrimonio existe s/.1.04 de pasivos o deudas a corto plazo, la empresa funciona gracias al financiamiento.</font></p2>
+                <div></div><p2><font face="Cambria"><b>*</b> Para el año 2015 el indicador resultó ser s/.1.12 que significa que por cada s/.1.00
+                de patrimonio existe s/.1.12 de pasivos o deudas a corto plazo, la empresa funciona gracias al financiamiento.</font></p2>
+                <div></div><p2><font face="Cambria"><b>*</b>  Para el año 2016 el indicador resultó ser 1.29 que significa que por cada s/.1.00
+                de patrimonio existe s/.1.29 de pasivos o deudas a corto plazo, la empresa funciona gracias al financiamiento.</font></p2>
+                <div class="row"></div>
+                <p2><b><font face="Cambria">En conclusión</font></b></p2>
+                <div></div><p2><font face="Cambria">El ratio de endeudamiento de la empresa para los años 2013, 2014, 2015
+                y 2016 resultó mayor a uno reflejando una estabilidad de la empresa, pues significa que el cociente obtenido refleja que
+                las deudas a corto plazo equivalen mayor al 100% del patrimonio neto. Lo que significa que la empresa está funcionando
+                gracias al financiamiento sin embargo esto puede ser preocupante si el ratio llegara a ser mayor a 1,5 pues la empresa
+                se le dificultaría el pago de la deuda.</font></p2>
+                <div class="row"></div>
+                <div class="row"></div>
+                <p2><b><font face="Cambria">COBERTURA DE INTERESES</font></b></p2>
+                <div></div>
+                <p2><font face="Cambria">Es un ratio que nos indica hasta qué punto puede la empresa disminuir sus
+                    utilidades sin poner a la empresa en una situación de dificultad para pagar sus gastos financieras.
+                    Es un indicador utilizado con mucha frecuencia por las entidades financieras, ya que permite conocer
+                    la facilidad que tiene la empresa para atender sus obligaciones derivadas de su deuda.</font></p2>
+                <div class="row"></div>
+                <div class="center-align">
+                    <img  src="app/img/r_endeudamiento_4.PNG" alt="HTML5 Icon"  style="width:400px;height:80px;">
+                </div>
+                <div class="row"></div>
+                <div class="center-align">
+                    <img   src="app/img/r_endeudamiento_2.PNG" alt="HTML5 Icon"  style="width:600px;height:120px;">
+                </div>
+                <div class="row"></div>
+                <p2><b><font face="Cambria">Interpretación</font></b></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> La cobertura de interés del 2013 es de 33.8, eso significa que por cada S/.1.00
+                    de gastos financieros existen S/.33.8 de utilidades operativa.</font></p2>
+                <div></div><p2><font face="Cambria"><b>*</b> La cobertura de interés del 2014 es de 39.4, eso significa que por cada S/.1.00
+                de gastos financieros existen S/.39.4 de utilidades operativa.</font></p2>
+                <div></div><p2><font face="Cambria"><b>*</b> La cobertura de interés del 2015 es de 48.7, eso significa que por cada S/.1.00
+                de gastos financieros existen S/.48.7 de utilidades operativa.</font></p2>
+                <div></div><p2><font face="Cambria"><b>*</b> La cobertura de interés del 2016 es de 34.3 eso significa que por cada S/.1.00
+                de gastos financieros existen S/.34.3 de utilidades operativa.</font></p2>
+                <div class="row"></div>
+                <p2><b><font face="Cambria">En conclusión</font></b></p2>
+                <div></div><p2><font face="Cambria">La cobertura de intereses del 2013 al 2015 está creciendo, luego hacia el 2016
+                decae. Podemos observar que la empresa tiene una capacidad de endeudamiento muy alta ya que sus valores, están entre 30 y 50 veces
+                el valor de la carga financiera a pagar.</font></p2>
+                <div class="row"></div>
+                <p2><b><font face="Cambria">COBERTURA DE DEUDAS</font></b></p2>
+                <div></div>
+                <p2><font face="Cambria">Es un ratio que muestra la salud financiera de la compañía, relacionando la deuda financiera con su flujo
+                    de caja medido por el EBITDA. Mientras menor sea el valor del índice mayor será la capacidad de pago de la empresa. Si el ratio es menor a 2
+                    se está en presencia de una compañía con buena capacidad de repago de su deuda. Si supera 4 la empresa puede afrontar algún problema financiero</font></p2>
+                <div class="row"></div>
+                <div class="center-align">
+                    <img  src="app/img/r_endeudamiento_5.PNG" alt="HTML5 Icon"  style="width:400px;height:80px;">
+                </div>
+                <div class="row"></div>
+                <div class="center-align">
+                    <img  src="app/img/r_endeudamiento_3.PNG" alt="HTML5 Icon"  style="width:600px;height:120px;">
+                </div>
+                <div class="row"></div>
+                <p2><b><font face="Cambria">Interpretación</font></b></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> La cobertura de deuda en el 2013 es 0.828 lo cual significa
+                    que por cada S/. 1.00 de utilidad operativa, existe S/.0.828 de deuda financiera.</font></p2>
+                <div></div><p2><font face="Cambria"><b>*</b> La cobertura de deuda en el 2014 es 0.110 lo cual significa
+                que por cada S/. 1.00 de utilidad operativa, existe S/.0.110 de deuda financiera.</font></p2>
+                <div></div><p2><font face="Cambria"><b>*</b> La cobertura de deuda en el 2015 es 0.091 lo cual significa
+                que por cada S/. 1.00 de utilidad operativa, existe S/.0.0.91 de deuda financiera.</font></p2>
+
+                <div class="row"></div>
+                <p2><b><font face="Cambria">En conclusión</font></b></p2>
+                <div></div><p2><font face="Cambria">El ratio hallado para estos periodos está muy por
+                debajo de 2, lo que quiere decir, que es una compañía con buena capacidad de repago.</font></p2>
+                <div class="row"></div>
+                <p2><b><font face="Cambria">COMPARACIÓN CON EL MERCADO</font></b></p2><div></div>
+                <p2><font face="Cambria"><b>*</b> La empresa frente a la competencia es estable, posee un buen indicador de endeudamiento que no supera el 1.5,
+                    eso quiere decir que la existe poca diferencia entre los pasivos y el patrimonio de la empresa.</font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b>Además la cobertura de intereses es muy alta, puede endeudarse
+                    mucho más con una capacidad de pago de 30 a 50 veces la carga financiera a pagar.</font></p2>
+                <div class="row"></div>
+                <p2><font face="Cambria"><b>*</b> La empresa tiene una cobertura de deuda, que invita a las entidades financieras a invertir.</font></p2>
+                <div class="row"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div ng-show="ratiosLiquidez==1">
+    <div class="container">
+        <div class="card">
+            <div class="card-content black-text">
+                <div class="row">
+                    <div class=" row center-align">
+                        <p1><b><font face="Cambria">RATIOS DE LIQUIDEZ</font></b></p1>
+                    </div>
+                    <div><p2><b>ANÁLISIS DE LIQUIDEZ </b></p2></div>
+
+                    <p2>Una buena imagen y posición frente a los intermediarios financieros, requiere: mantener
+                        un nivel de capital de trabajo suficiente para llevar a cabo las operaciones que sean necesarias
+                        para generar un excedente que permita a la empresa continuar normalmente con su actividad
+                        y que produzca el dinero suficiente para cancelar las necesidades de los gastos financieros
+                        que le demande su estructura de endeudamiento en el corto plazo Los Ratios de liquidez miden
+                        la capacidad de pago que tiene la empresa para hacer frente a sus deudas de corto plazo. Es decir,
+                        el dinero en efectivo de que dispone, para cancelar las deudas. Expresan no solamente el manejo
+                        de las finanzas totales de la empresa, sino la habilidad gerencial para convertir en efectivo
+                        determinados activos y pasivos corrientes. Facilitan examinar la situación financiera de la compañía
+                        frente a otras, en este caso las ratios se limitan al análisis del activo y pasivo corriente.</p2>
+                    <div class="row"></div>
+                    <p2><b><font face="Cambria">Ratio de liquidez general o razón corriente.</font></b></p2>
+                    <div class="row"></div>
+                    <p2> <font face="Cambria">El ratio de liquidez general lo obtenemos dividiendo el activo corriente entre el pasivo corriente. El activo corriente incluye básicamente las cuentas de caja, bancos, cuentas y letras por cobrar, valores de fácil negociación e inventarios. Este ratio es la principal medida de liquidez, muestra qué proporción de deudas de corto plazo son cubiertas por elementos del activo, cuya conversión en dinero corresponde aproximadamente al vencimiento de las deudas.</font></p2>
+                    <div class="row"></div>
+                    <div class="center-align">
+                        <img  src="app/img/r_liqui_1.PNG" alt="HTML5 Icon"  style="width:400px;height:80px;">
+                    </div>
+                    <div class="row"></div>
+                    <div class="center-align">
+                        <img  src="app/img/r_liqui_2.PNG" alt="HTML5 Icon"  style="width:600px;height:150px;">
+                    </div>
+                    <div class="row"></div>
+                    <p2><font face="Cambria">La interpretación del ratio es cuánto de dinero cuento para pagar mi deuda, esto se debe medir en el corto plazo.</font></p2>
+                    <p2><font face="Cambria">Interpretación:</font></p2>
+                    <div class="row"></div>
+                    <p2><font face="Cambria"><b>*</b> Para el año 2013 por cada S/.1 de pasivo corriente la empresa cuenta con S/.0.68 de activo corriente. (Corto plazo).</font></p2>
+                    <div></div><p2><font face="Cambria"><b>*</b> Para el año 2014 por cada S/.1 de pasivo corriente la empresa cuenta con S/.0.60 de activo corriente.(Corto plazo).</font></p2>
+                    <div></div><p2><font face="Cambria"><b>*</b> Para el año 2015 por cada S/.1 de pasivo corriente la empresa cuenta con S/.0.67 de activo corriente.(Corto plazo).</font></p2>
+                    <div></div><p2><font face="Cambria"><b>*</b> Para el año 2016 por cada S/.1 de pasivo corriente la empresa cuenta con S/.0.58 de activo corriente.(Corto plazo).</font></p2>
+                        <div class="row"></div>
+                    <p2><font face="Cambria">En conclusión:</font></p2>
+                        <div class="row"></div>
+                    <p2><font face="Cambria">La situación es desfavorable para la empresa debido a que su ratio de liquidez fue disminuyendo con una excepción del año 2015 en dónde tuvo un ratio de liquidez de 067. En general la empresa ha disminuido su capacidad de convertir en efectivo sus activos y la empresa no es líquida pues la proporción durante los años 2013-2016 es menor a 1 y eso significa que las deudas de corto plazo no son cubiertas por los elementos del activo.</font></p2>
+                    <div class="row"></div>
+                    <p2><b><font face="Cambria">Ratio prueba ácida</font></b></p2>
+                    <div class="row"></div>
+                    <p2><font face="Cambria"> Es aquel indicador que al descartar del activo corriente cuentas que no son fácilmente realizables, proporciona una medida más exigente de la capacidad de pago de una empresa en el corto plazo. Es algo más severo que la anterior y es calculado restando el inventario del activo corriente y dividiendo esta diferencia entre el pasivo corriente. Los inventarios son excluidos del análisis porque son los activos menos líquidos y los más sujetos a pérdidas en caso de quiebra. A diferencia de la razón anterior, esta excluye los inventarios por ser considerada la parte menos líquida en caso de quiebra. Esta razón se concentra en los activos más líquidos, por lo que proporciona datos más correctos al equipo de trabajo.</font></p2>
+                    <div class="row"></div><div class="row"></div>
+                    <div class="center-align">
+                        <img  src="app/img/r_liqui_3.PNG" alt="HTML5 Icon"  style="width:400px;height:80px;">
+                    </div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="center-align">
+                        <img  src="app/img/r_liqui_4.PNG" alt="HTML5 Icon"  style="width:600px;height:150px;">
+                    </div>
+                    <div class="row"></div>
+                    <p2><font face="Cambria">Interpretación:</font></p2>
+                        <div class="row"></div>
+                    <p2><font face="Cambria"><b>*</b> En año 2013 la empresa por cada sol que debe, dispone de 0.49 nuevos soles para pagarlo, es decir que no estaría en condiciones de pagar la totalidad de sus pasivos a corto plazo sin vender sus mercancías.</font></p2>
+                    <div></div><p2><font face="Cambria"><b>*</b> En año 2014 la empresa por cada sol que debe, dispone de 043 nuevos soles para pagarlo, es decir que no estaría en condiciones de pagar la totalidad de sus pasivos a corto plazo sin vender sus mercancías.</font><p2>
+                    <div></div><p2><font face="Cambria"><b>*</b> En año 2015 la empresa por cada sol que debe, dispone de 0.53 nuevos soles para pagarlo, es decir que no estaría en condiciones de pagar la totalidad de sus pasivos a corto plazo sin vender sus mercancías.</font><p2>
+                    <div></div><p2><font face="Cambria"><b>*</b> En año 2016 la empresa por cada sol que debe, dispone de 0.48 nuevos soles para pagarlo, es decir que no estaría en condiciones de pagar la totalidad de sus pasivos a corto plazo sin vender sus mercancías.</font></p2>
+                                <div class="row"></div>
+                                <p2><font face="Cambria">En conclusión:</font></p2>
+                                <div class="row"></div>
+                                <p2><font face="Cambria"> 	Se puede observar que la situación es relativamente desfavorable ya que su ratio de prueba ácida ha ido aumentando y cayendo del año 2013 al 2016 con excepción del año 2015 que disminuyo a 0.53 y en el año 2014 donde se presenta la mayor caída con un ratio de 0.43. En general se puede decir que la empresa no es líquida ya que no es estable en su crecimiento en cuanto a este ratio, además de ello se observa que durante el período 2013-2016 la empresa presenta ratios menores a 1 eso significa que si excluimos el inventario  de los activos corrientes , de igual forma que en el caso anterior la empresa no presenta capacidad para convertir en efectivo sus activos y que sus deudas a corto plazo no son cubiertas por los elementos de sus activos corrientes restándole el inventario.</font></p2>
+                                <div class="row"></div>
+
+                    <div class="row"></div>
+                                <p2><b><font face="Cambria">Ratio capital de trabajo</font> </b></p2>
+                                <div class="row"></div>
+                                <p2><font face="Cambria">Muestra la relación entre los Activos Corrientes y los Pasivos Corrientes. El Capital de Trabajo, es lo que le queda a la firma después de pagar sus deudas inmediatas, es la diferencia entre los Activos Corrientes menos Pasivos Corrientes; algo así como el dinero que le queda para poder operar en el día a día.</font></p2>
+                                <div class="row"></div><div class="row"></div>
+                                <div class="center-align">
+                                    <img  src="app/img/r_liqui_5.PNG" alt="HTML5 Icon"  style="width:500px;height:60px;">
+                                </div>
+                                <div class="row"></div><div class="row"></div>
+                                <div class="center-align">
+                                    <img  src="app/img/r_liqui_6.PNG" alt="HTML5 Icon"  style="width:600px;height:150px;">
+                                </div>
+                                <div class="row"></div>
+                                <p2><font face="Cambria">Interpretación:</font></p2>
+                                <div class="row"></div>
+                                <p2><font face="Cambria"><b>*</b> En el año 2013 la empresa no cuenta con S/.369.99 para cubrir con todos sus pasivos en el corto plazo y eso le conllevaría a no tener la suficiente liquidez para seguir operando en su día a día.</font></p2>
+                    <div></div><p2><font face="Cambria"><b>*</b> En el año 2014 la empresa no cuenta con S/.470.61 para cubrir con todos sus pasivos en el corto plazo y eso le conllevaría a no tener la suficiente liquidez para seguir operando en su día a día.</font></p2>
+                    <div></div><p2><font face="Cambria"><b>*</b> En el año 2015 la empresa no cuenta con S/.456.01 para cubrir con todos sus pasivos en el corto plazo y eso le conllevaría a no tener la suficiente liquidez para seguir operando en su día a día</font></p2>
+                    <div></div><p2><font face="Cambria"><b>*</b> En el año 2016 la empresa no cuenta con S/.741.95 para cubrir con todos sus pasivos en el corto plazo y eso le conllevaría a no tener la suficiente liquidez para seguir operando en su día a día.</font></p2>
+                                    <div class="row"></div>
+                                <p2><font face="Cambria">En conclusión:</font></p2>
+                                        <div class="row"></div>
+                                <p2><font face="Cambria"> 	En el período 2013 – 2016 se observa que la empresa no dispone de la suficiente liquidez para cubrir sus pasivos corrientes, eso implicaría a que no tenga dinero para operar en el día a día, esto significa una situación muy desfavorable para la empresa debido a que se corre un alto riesgo de sufrir de liquidez en medida que las exigencias de los pasivos corrientes no alcancen a ser cubiertas por los activos corrientes.</font></p2>
+                                        <div class="row"></div>
+
+                                        <div class="row"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-show="ratiosGestion==1">
+    <div class="container">
+        <div class="card">
+            <div class="card-content black-text">
+                <div class="row">
+                    <div class=" row center-align">
+                        <p1><b>RATIOS DE GESTIÓN O EFICIENCIA OPERATIVA</b></p1>
+                    </div>
+                    <p2><b>ROTACIÓN DE INVENTARIOS</b></p2>
+                    <div class="row"></div>
+                    <p2>La rotación de Inventarios es el indicador que permite saber el número de veces
+                        en que el inventario es rotado en un periodo determinado.</p2>
+                    <p2>Como vemos en Backus desde el 2014, la cantidad de días de la rotación
+                        de inventarios ha ido disminuyendo, lo que hace que la empresa tenga un
+                        mayor flujo de rotación</p2>
+                    <p2>En el 2016 la rotación disminuyo a 25, que llegaría a ser 25 días, lo que significa
+                        que la empresa está yendo por un buen camino, y este número nos dice que cada 25 días
+                        se renueva el inventario, por el mismo movimiento de la fabricación de los productos.</p2>
+                    <div class="row"></div>
+                    <div class="center-align">
+                        <img  src="app/img/r_gestion_1.PNG" alt="HTML5 Icon"  style="width:600px;height:130px;">
+                    </div>
+                    <div class="row"></div>
+                    <p2><b>ROTACIÓN DE CUENTAS POR PAGAR</b></p2>
+                    <p2>Se utiliza para medir la velocidad en que una entidad paga a sus proveedores.
+                        Este tipo de indicadores lo usan los bancos.</p2>
+                    <p2>Como vemos en Backus desde el 2014, la cantidad de días de la rotación de cuentas por pagar
+                        (como documentos) ha ido en descenso, lo que nos dice mucho de la empresa, que tan deudora es.</p2>
+                    <p2>Por ejemplo en estos últimos años ha aumentado la rotación, lo que dice de la empresa,
+                        se está empezando a  preocupando en pagar sus deudas lo que hace que el flujo de las
+                        cuentas por pagar roten con mas facilidad.</p2>
+                    <div class="row"></div>
+                    <div class="center-align">
+                        <img  src="app/img/r_gestion_2.PNG" alt="HTML5 Icon"  style="width:600px;height:130px;">
+                    </div>
+                    <div class="row"></div>
+                    <p2><b>ROTACIÓN DE CUENTAS POR COBRAR</b></p2>
+                    <p2>Se utiliza para medir la velocidad en que, a la empresa le pagan sus deudores.
+                        Este tipo de indicadores nos indica a qué velocidad convierte las cuentas por
+                        cobrar en efectivo u en otro activo.</p2>
+                    <p2>Como se puede observar en la tabla nuestro indicador está disminuyendo, el flujo de las cuentas por cobrar ha
+                        disminuido, lo que nos dice que la empresa no es su prioridad controlar la rotación de cuentas por cobrar. </p2>
+                    <div class="row"></div>
+                    <div class="center-align">
+                        <img  src="app/img/r_gestion_3.PNG" alt="HTML5 Icon"  style="width:600px;height:130px;">
+                    </div>
+                    <div class="row"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-show="ratiosRentabilidad==1">
+    <div class="container">
+        <div class="card">
+            <div class="card-content black-text">
+                <div class="row">
+                    <div class=" row center-align">
+                        <p1><b>RATIOS DE RENTABILIDAD</b></p1>
+                    </div>
+                    <p2>Miden la capacidad de generación de utilidad por parte de la empresa. Tienen
+                        por objetivo apreciar el resultado neto obtenido a partir de ciertas decisiones y
+                        políticas en la administración de los fondos de la empresa. Evalúan los resultados
+                        económicos de la actividad empresarial. Expresan el rendimiento de la empresa en
+                        relación con sus ventas, activos o capital. Relacionan directamente la capacidad de
+                        generar fondos en operaciones de corto plazo. Si los Indicadores son negativos expresan
+                        la etapa de desacumulación que la empresa está atravesando y que afectará toda su estructura
+                        al exigir mayores costos financieros o un mayor esfuerzo de los dueños, para mantener el negocio.</p2>
+                    <div class="row"></div>
+                    <p2><b>MARGEN BRUTO</b></p2>
+                    <div class="row"></div>
+                    <p2>Este ratio relaciona las ventas menos el costo de ventas con las ventas. Indica la cantidad
+                        que se obtiene de utilidad por cada UM de ventas, después de que la empresa ha cubierto el costo
+                        de los bienes que produce y/o vende. Indica las ganancias en relación con las ventas, deducido
+                        los costos de los bienes vendidos. Nos dice también la eficiencia de las operaciones y la forma
+                        como son asignados los precios de los productos. Cuanto más grande sea el margen bruto
+                        de utilidad, será mejor, pues significa que tiene un bajo costo de las mercancías que produce
+                        y/ o vende.</p2>
+                    <div class="row"></div>
+                    <div class="center-align">
+                        <img  src="app/img/r_renta_1.png" alt="HTML5 Icon"  style="width:400px;height:60px;">
+                    </div>
+                    <div class="row"></div>
+                    <div class="center-align">
+                        <img  src="app/img/r_renta_2.PNG" alt="HTML5 Icon"  style="width:600px;height:150px;">
+                    </div>
+                    <div class="row"></div>
+                    <p2><b>*</b> El Margen Bruto del año 2013 es 0.718 lo que indica que el 71.8%
+                        de las ventas netas se convierte en utilidad bruta, lo cual nos dice que nuestra utilidad bruta
+                        o margen luego del costo de ventas es del 71.8% del costo de ventas sin descontar los gastos
+                        operativos ni otros gastos o pagos a los trabajadores.</p2>
+                    <div></div><p2><b>*</b> El Margen Bruto del año 2014 es 0.7149 lo que indica que el 71.49% de las ventas
+                        netas se convierte en utilidad bruta, lo cual nos dice que nuestra utilidad bruta o margen luego
+                        del costo de ventas es del 71.49%  del costo de ventas sin descontar los gastos operativos
+                        ni otros gastos o pagos a los trabajadores. </p2>
+                    <div></div><p2><b>*</b> El Margen Bruto del año 2015 es 0.7139 lo que indica que el 71.39% de las ventas netas se convierte
+                        en utilidad bruta, lo cual nos dice que nuestra utilidad bruta o margen luego del costo de ventas es del 71.39%
+                        del costo de ventas sin descontar los gastos operativos ni otros gastos o pagos a los trabajadores.  </p2>
+                    <div></div><p2><b>*</b> El Margen Bruto del año 2016 es 0.7145 lo que indica que el 71.45% de las ventas netas se convierte
+                        en utilidad bruta, lo cual nos dice que nuestra utilidad bruta o margen luego del costo de ventas es del
+                        71.45%  del costo de ventas sin descontar los gastos operativos ni otros gastos o pagos a los trabajadores.   </p2>
+                    <div></div><p2>    Asimismo, observamos que el margen bruto es decreciente en los tres primeros años, luego en el 2016 este se recupera.</p2>
+                    <div class="row"></div>
+                    <p2><b>MARGEN NETO</b></p2>
+                    <div class="row"></div>
+                    <p2>Es más específico que el anterior. Relaciona la utilidad líquida con el nivel de las ventas netas. Mide el porcentaje
+                        de cada peso de ventas que queda después de que todos los gastos, incluyendo los impuestos, han sido deducidos.Cuanto
+                        más grande sea el margen neto de la empresa tanto mejor. Este ratio permite evaluar si el esfuerzo hecho en la
+                        operación durante el período de análisis, está produciendo una adecuada retribución para el empresario.</p2>
+                    <div class="row"></div>
+                    <div class="center-align">
+                        <img  src="app/img/r_renta_3.png" alt="HTML5 Icon"  style="width:400px;height:60px;">
+                    </div>
+                    <div class="row"></div>
+                    <div class="center-align">
+                        <img  src="app/img/r_renta_4.PNG" alt="HTML5 Icon"  style="width:600px;height:150px;">
+                    </div>
+                    <div class="row"></div>
+                    <div></div><p2><b>*</b> El Margen Neto del 2013 es de 0.23544 o 23.544% lo que indica que el año 2013 hay un aumento en
+                        utilidad neta, con lo cual se puede evidenciar una buena gestion por parte de los accionistas de la empresa.</p2>
+                    <div></div><p2><b>*</b> El Margen Neto del 2014 es de 0.22616 o 22.61% lo que indica que el año 2014 hay un aumento en utilidad neta,
+                        con lo cual se puede evidenciar una buena gestion por parte de los accionistas de la empresa. </p2>
+                    <div></div><p2><b>*</b> El Margen Neto del 2015 es de 0.26512 o 26.51% lo que indica que el año 2015 hay un aumento en utilidad neta,
+                        con lo cual se puede evidenciar una buena gestion por parte de los accionistas de la empresa. </p2>
+                    <div></div><p2><b>*</b> El Margen Neto del 2016 es de 0.163133 o 16.31% lo que indica que el año 2016 hay un aumento en utilidad neta,
+                        con lo cual se puede evidenciar una buena gestion por parte de los accionistas de la empresa. </p2>
+                    <div></div><p2>   Asimismo, vemos que los tres primeros años  el margen neto se mantiene en 20% o más pero el ultimo año se aprecia
+                        un decrecimiento notorio del margen neto debido a  gastos operativos, a otros gastos o pagos a los trabajadores.</p2>
+                    <div></div><p2>Fuera de todo, podemos seguir diciendo que la empresa es rentable hasta el 2016.</p2>
+
+                    <div class="row"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-show="conclusiones==1">
+    <div class="container">
+        <div class="card">
+            <div class="card-content black-text">
+                <div class="row">
+                    <div class=" row center-align">
+                        <p1><b>CONCLUSIONES</b></p1>
+                    </div>
+
+                    <div class="row"></div>
+                    <p2>Podemos concluir que la empresa de union de cervecerias peruanas backus y johnston es altamente solvente,
+                    debido a que puede pagar sus deudas en el largo plazo, también la empresa es rentable debido a que produce
+                    más de lo que invierte, pero la empresa no es líquida ya que la capacidad de transformar sus activos en dinero
+                    es baja.</p2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-show="misionvision==1">
+    <div class="container">
+        <div class="card">
+            <div class="card-content black-text">
+                <div class="row">
+                    <div class=" row">
+                        <p2><b>ANTECEDENTES</b></p2>
+                    </div>
+                    <div class="row"></div>
+                    <p2>El proceso estratégico requiere de una fase inicial de formulación en la que se enuncia el conjunto de cuatro
+                        componentes fundamentales como son: (a) la visión, (b) misión, (c) valores, y (d) el código de ética. Pensar
+                        en el futuro y planear estratégicamente otorga a la organización más posibilidades de sobrevivir, que si actúa
+                        solo en función al corto plazo. La visión brindará un enfoque a largo plazo, basado en un análisis situacional
+                        actual de la empresa con una visión futura de la industria de bebidas; por otro lado, la misión se traducirá
+                        en la ejecución de la estrategia e impulsará a la empresa hacia la situación futura descrita en la visión
+                        (D’Alessio, 2008). </p2>
+                    <div class="row"></div>
+                    <div>
+                        <p2><b>VISIÓN</b></p2>
+                    </div>
+                    <div class="row"></div>
+                    <p2>En el año 2025, lograr un consumo anual per cápita de cerveza de 90 litros, consolidando el liderazgo de Backus
+                        en el mercado local e incrementando su presencia en el mercado internacional, soportado bajo una cultura de
+                        responsabilidad social.</p2>
+                    <div class="row"></div>
+                    <div></div><p2><b>•</b>Crecimiento del valor de nuestra participación del mercado a través de nuestro portafolio de marcas. </p2>
+                    <div></div><p2><b>•</b>Ser el mejor socio de nuestros proveedores. </p2>
+                    <div></div><p2><b>•</b>Contar con un modelo de gestión ejemplar que desarrolla y retiene talento. </p2>
+                    <div></div><p2><b>•</b>Ser un actor ejemplar en la sociedad  </p2>
+                    <div class="row"></div>
+                    <div>
+                        <p2><b>MISIÓN</b></p2>
+                    </div>
+                    <div class="row"></div>
+                    <p2>Comercializar de forma responsable bebidas alcohólicas
+                        con marcas globales y nacionales, con el fin de satisfacer a los consumidores de acuerdo a su
+                        estilo de vida, bajo el cumplimiento de las normas nacionales e internacionales. Asimismo, colaborar
+                        con un desarrollo sostenible de la sociedad, a través de la integración de productividad y
+                        responsabilidad social empresarial, protegiendo nuestra licencia para operar, satisfaciendo los más altos
+                        estándares de calidad, generando bienestar y máximo valor para nuestros clientes, colaboradores
+                        , stakeholders y accionistas.</p2>
+                    <div class="row"></div>
+                    <div>
+                        <p2><b>VALORES</b></p2>
+                    </div>
+                    <div class="row"></div>
+                    <p2>D’Alessio (2012) indicó que los valores establecen la filosofía de la organización,
+                        actitudes, tradiciones, y su personalidad. Los valores que van establecer la filosofía
+                        de Backus son los siguientes:</p2>
+                    <div class="row"></div>
+                    <div></div><p2><b>•</b>Trabajo en equipo</p2>
+                    <div></div><p2><b>•</b>Desarrollo humano</p2>
+                    <div></div><p2><b>•</b>Honestidad</p2>
+                    <div></div><p2><b>•</b>Creatividad</p2>
+                    <div></div><p2><b>•</b>Cultura de la excelencia </p2>
+                    <div></div><p2><b>•</b>Responsabilidad social</p2>
+                    <div class="row"></div>
+
+                    <div>
+                        <p2><b>CÓDIGO DE ÉTICA</b></p2>
+                    </div>
+                    <div class="row"></div>
+                    <p2>El código de ética que rige el comportamiento de cada uno
+                        de los miembros de la compañía Backus está conformado por los siguientes principios: </p2>
+                    <div class="row"></div>
+
+                    <div></div><p2><b>•</b>Respetar la confidencialidad de la información de sus clientes y proveedores.</p2>
+                    <div></div><p2><b>•</b>Ofrecer a sus colaboradores todo lo necesario para el desarrollo de sus
+                    funciones, en un ambiente grato y en igualdad de oportunidades sin discriminación por su lugar
+                    de nacimiento, raza, religión, sexo, ideologías políticas.</p2>
+                    <div></div><p2><b>•</b>	Censurar y criticar actos contra las buenas costumbres, o malas prácticas que van en contra del medio ambiente. </p2>
+                    <div></div><p2><b>•</b> Tomar decisiones estratégicas con objetivos a largo plazo, actuando con la sociedad de forma responsable y respetando el derecho de opinión. </p2>
+                    <div></div><p2><b>•</b> Cumplimiento de las normas medio ambientales por parte de la compañía, con certificaciones ISO, ambiente, capital humano etc. </p2>
+                    <div></div><p2><b>•</b> Integración y buena fe. </p2>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-show="organigrama==1">
+    <div class="container">
+        <div class="card">
+            <div class="card-content black-text">
+                <div class="row">
+                    <div class=" row center-align">
+                        <p1><b>ORGANIGRAMA</b></p1>
+                    </div>
+                    <div class="row"></div>
+                    <div class="center-align">
+                        <img  src="app/img/orga.jpg" alt="HTML5 Icon"  style="width:800px;height:500px;">
+                    </div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<ul id="slide-out" class="side-nav">
+
+    <li><div class="divider"></div></li>
+    <li><a ng-click="EntrarInicio()"><font face="Cambria"><b>INICIO</b></font></a></li>
+    <li><div class="divider"></div></li>
+    <li><a ng-click="EntrarIntegrantes()"><font face="Cambria"><b>PRESENTACIÓN</b></font></a></li>
+    <li><div class="divider"></div></li>
+    <li><a ng-click="EntrarIntroduccion()"><font face="Cambria"><b>INTRODUCCIÓN</b></font></a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader"><font face="Cambria">LA EMPRESA</font></a></li>
+    <li><a ng-click="EntrarHistoria()"><font face="Cambria"><b>HISTORIA</b></font></a></li>
+    <li><a ng-click="EntrarActualidad()"><font face="Cambria"><b>EN LA ACTUALIDAD</b></font></a></li>
+    <li><a ng-click="EntrarMisionVision()"><font face="Cambria"><b>PROCESO ESTRATÉGICO</b></font></a></li>
+    <li><a ng-click="EntrarOrganigrama()"><font face="Cambria"><b>ORGANIGRAMA</b></font></a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader"><font face="Cambria">ANÁLISIS DE CUENTAS</font></a></li>
+    <li><a ng-click="EntrarE_S_F_ACTIVOS()"><font face="Cambria"><b>ESTADOS DE SITUACIÓN FINANCIERA</b></font></a></li>
+    <li><a ng-click="EntrarE_S_F_PASIVOS()"><font face="Cambria"><b>ESTADOS DE RESULTADOS</b></font></a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader"><font face="Cambria">RATIOS DE POSICION FINANCIERA</font></a></li>
+    <li><a ng-click="EntrarRatiosLiquidez()"><font face="Cambria"><b>RATIOS DE LIQUIDEZ</b></font></a></li>
+    <li><a ng-click="EntrarRatiosEndeudamiento()"><font face="Cambria"><b>RATIOS DE ENDEUDAMIENTO O SOLVENCIA</b></font></a></li>
+    <li><a ng-click="EntrarRatiosGestion()"><font face="Cambria"><b>RATIOS DE GESTIÓN O EFICIENCIA OPERATIVA</b></font></a></li>
+    <li><a ng-click="EntrarRatiosRentabilidad()"><font face="Cambria"><b>RATIOS DE RENTABILIDAD</b></font></a></li>
+    <li><a ng-click="EntrarConclusiones()"><font face="Cambria"><b>CONCLUSIONES</b></font></a></li>
+
+</ul>
